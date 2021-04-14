@@ -30,5 +30,11 @@ export class CrewComponent implements OnInit {
     }
 
   }
+  
+  removeCrewMember(candidates: object) {
+    if (this.crew.includes(candidates)) {
+      this.crew.push(candidates);
+    }
 
+  }
 }
