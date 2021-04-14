@@ -24,6 +24,11 @@ export class CrewComponent implements OnInit {
 
   ngOnInit() { }
 
-  // Code the 'addCrewMember' function here:
+  addCrewMember(candidates: object) {
+    if ((this.crew.length < 3)&&(!this.crew.includes(candidates))) {
+      this.crew.push(candidates);
+    }
+
+  }
 
 }
